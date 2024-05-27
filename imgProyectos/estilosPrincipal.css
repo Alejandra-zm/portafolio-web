@@ -470,7 +470,7 @@ address a {
 address i {
     color: #000;
 }
-address i:hover {
+address a:hover i{
     transition: 0.2s;
     filter: opacity(50%);
 }
