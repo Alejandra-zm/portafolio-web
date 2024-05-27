@@ -61,7 +61,7 @@ header {
     height: 100vh;
     /*768px;*/
     background-color: rgb(243, 202, 218);
-    background-image: url('../main/imgProyectos/FotoHeader.png');
+    background-image: url('../imgProyectos/FotoHeader.png');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -457,12 +457,20 @@ address {
     text-align: center;
 }
 
-address img {
+address a {
     margin: 5px;
+    width: 40px;
+    height: 30px;
     margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top: 10px;
 }
-
-address img:hover {
+address i {
+    color: #000;
+}
+address i:hover {
     transition: 0.2s;
     filter: opacity(50%);
 }
@@ -795,7 +803,7 @@ a.icon {
         width: 90%;
     }
 
-    address img {
+    address i {
         margin: 0 7px;
         margin-top: 10px;
     }
@@ -830,7 +838,7 @@ a.icon {
         height: 200px;
     }
 
-    address img {
+    address i {
         margin: 0 15px;
         margin-top: 10px;
     }
@@ -884,7 +892,7 @@ a.icon {
         margin: 20px 0;
     }
 
-    address img {
+    address i {
         margin: 5px;
         margin-top: 10px;
     }
