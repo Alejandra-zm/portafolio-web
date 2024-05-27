@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alejandra Zavala: Diseñadora Digital</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="estilosPrincipal.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <header id="top">
+            <script type="text/javascript">
+                function ver(n) {
+                    document.getElementById("menu" + n).style.display = "block";
+                }
+                function ocultar(n) {
+                    document.getElementById("menu" + n).style.display = "none";
+                }
+            </script>
+            <div id="logos">
+                <div id="logonav">
+                    <img id="logo" src="headerfooter/firma.png" alt="Logo" width="30">
+
+                    <nav>
+                        <ul class="menu" id="menu">
+                            <li id="li1"><a href="#proyectos">MIS PROYECTOS </a>
+                            </li>
+                            <li><a href="gallery.html">GALERÍA</a>
+                            </li>
+                            <li><a href="#footer">CONTACTO</a>
+                            </li>
+                            <li id="icon"><a href="javascript:void(0);" class="icon" onclick="menumas()">
+                                    <i class="fa fa-bars"></i></a></li>
+
+                            <script>
+                                function menumas() {
+                                    document.getElementsByClassName("nav")[0].classList.toggle("navmas");
+                                }
+                            </script>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="nav">
+                    <div class="menu2">
+                        <a href="#proyectos">MIS PROYECTOS </a>
+                        <a href="gallery.html">GALERÍA</a>
+                        <a href="#footer">CONTACTO</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div id="txt">
+                <div id="skzinfo">
+                    <div>
+                        
+                        <img src="imgProyectos/yop.png" height="100">
+                            <h3>Hola, soy <b>Alejandra</b></h3>
+                            <h1 style="font-family: 'Pacifico', cursive;">Diseñadora Digital</h1>
+
+                    </div>
+                    <p style="font-weight: 550; padding: 20px 0px 50px 0px;">Actualmente estudio Diseño
+                        Digital de Medios Interactivos en la Universidad Autónoma de Ciudad Juárez. Soy
+                        una persona comprometida y apasionada, siempre buscando seguir aprendiendo y
+                        experimentando para poder enfrentar nuevos desafíos y adaptarme a diversas
+                        situaciones. Disfruto dedicar mi tiempo al diseño visual, la ilustración y la
+                        creación de contenido digital.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <section>
+            <!-------Proyectos-------->
+            <div class="titulo">
+                <img src="headerfooter/logoTitulo.png" height="76">
+                <h1 id="proyectos">SOBRE MIS PROYECTOS</h1>
+                <div class="linea"></div>
+            </div>
+
+            <!--animacion-->
+            <article>
+                <div class="imagtext">
+                    <div class="slidertxt">
+                        <h1 id="animacion">Animación</h1>
+                        <p>Ya sea a través de técnicas "tradicionales" de animación 2D o las más avanzadas
+                            herramientas de animación 3D, mi trabajo abarca una amplia gama de estilos y narrativas
+                            que capturan la imaginación y transportan al espectador a nuevos mundos. Algunos de estos
+                            proyectos se desarrollaron en conjunto con colaboradores de la licenciatura DDMI y como
+                            parte de los proyectos para Difusión Cultural UACJ.
+                        </p>
+                    </div>
+
+
+                    <div class="artimg slider" id="slider1">
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/animacion1.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/animacion2.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/animacion3.gif">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/animacion4.gif">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 'slider1')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'slider1')">&#10095;</a>
+                    </div>
+
+
+                </div>
+                <a href="gallery.html"><button>Ver Galería +++</button></a>
+
+            </article>
+
+            <!--Modelado 3D-->
+            <article>
+                <div class="imagtext">
+                    <div class="slidertxt">
+                        <h1 id="modelado">Modelado 3D y Texturizado</h1>
+                        <p>El modelado 3D es el arte de crear representaciones tridimensionales de objetos
+                            y personajes que parecen saltar de la pantalla. En esta sección, descubrirás
+                            mis proyectos de modelado que destacan por su precisión, detalle y creatividad. Algunos de
+                            estos
+                            proyectos se desarrollaron en conjunto con colaboradores de la licenciatura DDMI y como
+                            parte de los proyectos para Difusión Cultural UACJ.
+                        </p>
+                    </div>
+
+
+                    <div class="artimg slider" id="slider2">
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/modelado1.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/modelado2.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/modelado3.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/modelado1.png">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 'slider2')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'slider2')">&#10095;</a>
+                    </div>
+
+
+                </div>
+                <a href="gallery.html"><button>Ver Galería +++</button></a>
+
+            </article>
+
+            <!--Diseño de Sitios Web-->
+            <article>
+                <div class="imagtext">
+                    <div class="slidertxt">
+                        <h1 id="diseñoWeb">Diseño Web</h1>
+                        <p>El diseño de sitios web es más que estética; se trata de crear experiencias de
+                            usuario fluidas y atractivas. Aquí presento mis proyectos de diseño web, donde la
+                            funcionalidad se encuentra con la creatividad. Cada sitio está diseñado para ser
+                            visualmente atractivo y fácil de navegar. ¡Este sitio fue hecho por mi!
+                        </p>
+                    </div>
+
+
+                    <div class="artimg slider" id="slider3">
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/web0.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/web3.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/web4.png">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgProyectos/web2.png">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 'slider3')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'slider3')">&#10095;</a>
+                    </div>
+
+
+                </div>
+                <a href="gallery.html"><button>Ver Galería +++</button></a>
+
+            </article>
+
+            <script>
+
+                // Almacena los índices de las diapositivas para cada slider
+                var slideIndices = {};
+
+                // Inicializa todos los sliders
+                document.querySelectorAll('.slider').forEach(function (slider) {
+                    var id = slider.id;
+                    slideIndices[id] = 1;
+                    showSlides(1, id);
+                });
+
+                function plusSlides(n, sliderId) {
+                    showSlides(slideIndices[sliderId] += n, sliderId);
+                }
+
+                function currentSlide(n, sliderId) {
+                    showSlides(slideIndices[sliderId] = n, sliderId);
+                }
+
+                function showSlides(n, sliderId) {
+                    var i;
+                    var slides = document.querySelectorAll('#' + sliderId + ' .mySlides');
+                    if (n > slides.length) { slideIndices[sliderId] = 1 }
+                    if (n < 1) { slideIndices[sliderId] = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndices[sliderId] - 1].style.display = "block";
+                }
+            </script>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <div id="design">
+                <a href="index.html" target="_blank"><img id="logobit" src="headerfooter/firma.png" alt="Logo"
+                        title="Ir a Unidades" height="45"></a>
+                <p><b>Alejandra Zavala</b><br>Portafolio</p>
+            </div>
+
+            <address>
+                <p><b>¡Contáctame!</b></p>
+                <a href="https://www.behance.net/alejandrazavalalimon" target="_blank"><img src="headerfooter/face.png"
+                        alt="Facebook" height="30"></a>
+                <a href="https://twitter.com/alepao_mir" target="_blank"><img src="headerfooter/twitter.png"
+                        alt="Twitter" height="30"></a>
+                <a href="https://www.instagram.com/limon.arts13/" target="_blank"><img src="headerfooter/insta.png"
+                        alt="Instagram" height="30"></a>
+                <a href="mailto:al204656@alumnos.uacj.mx"><img src="headerfooter/mail.png" alt="e-mail" height="30"></a>
+            </address>
+
+            <ul>
+                <li>│<a href="index.html">MIS PROYECTOS</a>││<a href="gallery.html">GALERÍA</a>│</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
