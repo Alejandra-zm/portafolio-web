@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Caviar Dreams';
-    src: url('../imgProyectos/CaviarDreams_Bold.ttf') format('truetype');
+    src: url('imgProyectos/CaviarDreams_Bold.ttf') format('truetype');
 }
 
 * {
