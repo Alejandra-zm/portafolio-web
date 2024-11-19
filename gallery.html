@@ -5,25 +5,57 @@
     <meta charset="utf-8">
     <title>Galería</title>
     <link rel="stylesheet" href="reset.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <script src="https://kit.fontawesome.com/68be11a8c4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="imgProyectos/estilosPrincipal.css">
+    <link rel="stylesheet" href="estilosPrincipal.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
 
 </head>
 
 <body>
+
+    <!-- Botón para ir al inicio -->
+    <button id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script>
+        // Obtener el botón
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        // Mostrar el botón cuando el usuario hace scroll hacia abajo
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'flex'; // Mostrar el botón
+            } else {
+                scrollToTopButton.style.display = 'none'; // Ocultar el botón
+            }
+        });
+
+        // Desplazar al inicio al hacer clic en el botón
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Movimiento suave
+            });
+        });
+    </script>
+
+
+
     <main>
-        <div id="logos">
+        <div id="logos" style="margin-top: 37px;">
             <div id="logonav">
                 <img id="logo" src="headerfooter/firma.png" alt="Logo" width="30">
 
                 <nav>
                     <ul class="menu" id="menu">
-                        <li id="li1"><a href="index.html">INICIO</a>
+                        <li id="li1"><a href="index.html">SOBRE MÍ</a>
                         </li>
-                        <li><a href="index.html#proyectos">MIS PROYECTOS </a>
+                        <li><a href="index.html#proyectos">ÁREAS DE EXPERIENCIA </a>
                         </li>
                         <li><a href="#footer">CONTACTO</a>
                         </li>
@@ -41,97 +73,249 @@
             <div class="nav">
                 <div class="menu2">
                     <a href="index.html">INICIO</a>
-                    <a href="index.html#proyectos">MIS PROYECTOS </a>
+                    <a href="index.html#proyectos">ÁREAS</a>
                     <a href="#footer">CONTACTO</a>
                 </div>
             </div>
         </div>
         <section>
-            <!-------Galeria-------->
+            <!--------------------------------------------Galeria-------------------------------------------->
             <div class="titulo">
                 <img src="headerfooter/logoTitulo.png" height="76">
                 <h1 id="galeriaTit">GALERÍA</h1>
                 <div class="linea"></div>
             </div>
 
-            <div class="galeria" id="galeria">
+            <!------------------ProyAnimacion------------------>
+            <article>
+                <h1 id="ProyAnimacion">Proyectos de Animación</h1>
+            </article>
+
+            <!-------Galeria------->
+            <div class="galeria">
                 <div class="row">
                     <div class="column">
-                        <a href="imgProyectos/animacion1.png" target="_blank"><img
-                                src="imgProyectos/animacion1.png"></a>
+                        <a href="imgProyectos/animacion1.png"><img src="imgProyectos/animacion1.png"></a>
                         <iframe width="560" height="180"
                             src="https://www.youtube.com/embed/gsHWgMjS6m8?si=UGSi1hYM7Sj5dRDP"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                        <iframe src="https://www.youtube.com/embed/VKphVMubEJw?si=0_IUT4MJP1asgRXD"
+                            title="YouTube video player Somos Jov" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                    </div>
+                    <div class="column">
                         <iframe width="560" height="270"
                             src="https://www.youtube.com/embed/DYcGPqMS5-4?si=N2EzTvRW7K32oriK&amp;controls=0"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <iframe width="560" height="180"
-                            src="https://www.youtube.com/embed/dkwu5PjQ8eQ?si=wTQxag_zKNWAzkwm"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <iframe src="https://www.youtube.com/embed/VKphVMubEJw?si=0_IUT4MJP1asgRXD"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <a href="imgProyectos/imgPublicitariaBoceto.png" target="_blank"><img
-                                src="imgProyectos/imgPublicitariaBoceto.png"></a>
-                        <a href="imgProyectos/imgPublicitariaFinal.png" target="_blank"><img
-                                src="imgProyectos/imgPublicitariaFinal.png"></a>
                         <iframe width="560" height="130"
                             src="https://www.youtube.com/embed/mktJb8luQOg?si=9ODOjtIg1p2H9qDW"
+                            title="YouTube video player Gradi" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="120"
+                            src="https://www.youtube.com/embed/REZnsr6cytU?si=XkFzPqzoitOR0BbL"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <a href="imgProyectos/gg2.jpg" target="_blank"><img src="imgProyectos/gg2.jpg"></a>
-                    </div>
-                    <div class="column">
-                        <a href="imgProyectos/modelado1.png" target="_blank"><img src="imgProyectos/modelado1.png"></a>
-                        <a href="imgProyectos/modelado3.png" target="_blank"><img src="imgProyectos/modelado3.png"></a>
-                        <a href="imgProyectos/videojuegos1.png" target="_blank"><img
-                                src="imgProyectos/videojuegos1.png"></a>
-                        <a href="imgProyectos/videojuegos2.png" target="_blank"><img
-                                src="imgProyectos/videojuegos2.png"></a>
-                        <a href="imgProyectos/videojuegos3.png" target="_blank"><img
-                                src="imgProyectos/videojuegos3.png"></a>
-                        <a href="imgProyectos/InvitacionTalleristas2.png" target="_blank"><img
-                                src="imgProyectos/InvitacionTalleristas2.png"></a>
-                        <a href="imgProyectos/cans.jpg" target="_blank"><img src="imgProyectos/cans.jpg"></a>
 
                     </div>
                     <div class="column">
-                        <a href="imgProyectos/modelado2.png" target="_blank"><img src="imgProyectos/modelado2.png"></a>
-                        <iframe
-                            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDigitalerias%2Fvideos%2F1285237442072551%2F&show_text=false&width=560&t=0"
-                            width="560" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                            allowfullscreen lazyload frameborder="0"
-                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                        <a href="imgProyectos/web5.png" target="_blank"><img src="imgProyectos/web5.png"></a>
-                        <iframe src="https://www.behance.net/embed/project/144744235?ilo0=1" height="316" width="404"
-                            allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                            refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        <a href="imgProyectos/web7.png" target="_blank"><img src="imgProyectos/web7.png"></a>
-                        <a href="imgProyectos/album.jpg" target="_blank"><img src="imgProyectos/album.jpg"></a>
-                        <a href="imgProyectos/Infograf1.png" target="_blank"><img src="imgProyectos/Infograf1.png"></a>
+                        <a href="imgProyectos/juanga.jpg" target="_blank"><img src="imgProyectos/juanga.jpg"></a>
+                        <a href="imgProyectos/animaFoto.jpg" target="_blank"><img src="imgProyectos/animaFoto.jpg"></a>
+                        
+                        <iframe width="560" height="120"
+                            src="https://www.youtube.com/embed/4__QNm1hA9w?si=sZXxBhtljNbcW9pw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                     </div>
                     <div class="column">
-                        <a href="imgProyectos/montaje.png" target="_blank"><img src="imgProyectos/montaje.png"></a>
                         <iframe width="560" height="180"
                             src="https://www.youtube.com/embed/oKR5F94nOoI?si=Nsr3XKI0MoiL4VR6"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <a href="imgProyectos/montaje.png" target="_blank"><img
-                                src="imgProyectos/InvitacionTalleristas.png">
-                            <a href="imgProyectos/web8.png" target="_blank"><img src="imgProyectos/web8.png"></a>
-                            <a href="imgProyectos/Infograf3.png" target="_blank"><img
+                            <a href="imgProyectos/gg2.jpg" target="_blank"><img src="imgProyectos/gg2.jpg"></a>
+                        <iframe width="560" height="150"
+                            src="https://www.youtube.com/embed/2vHAyEbYre0?si=LFxfBrkEhue3X0VB"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------ProyModelado------------------>
+            <article style="margin-top: 80px;">
+                <h1 id="ProyModelado">Proyectos de Modelado 3D y Texturizado</h1>
+            </article>
+
+            <!-------Galeria------->
+            <div class="galeria">
+                <div class="row">
+                    <div class="column">
+                        <a href="imgProyectos/imgPublicitariaBoceto.png" target="_blank"><img
+                                src="imgProyectos/imgPublicitariaBoceto.png"></a>
+                        <a href="imgProyectos/imgPublicitariaFinal.png" target="_blank"><img
+                                src="imgProyectos/imgPublicitariaFinal.png"></a>
+                    </div>
+                    <div class="column">
+                        
+                        <a href="imgProyectos/modelado3.png" target="_blank"><img src="imgProyectos/modelado3.png"></a>
+                        <a href="imgProyectos/modeladoAGUAS.png" target="_blank"><img src="imgProyectos/modeladoAGUAS.png"></a>
+
+
+                    </div>
+                    <div class="column">
+                        <a href="imgProyectos/modelado2.png" target="_blank"><img src="imgProyectos/modelado2.png"></a>
+                        <a href="imgProyectos/modelado4.png" target="_blank"><img src="imgProyectos/modelado4.png"></a>
+                    </div>
+                    <div class="column">
+                        <a href="imgProyectos/imgPoster.png" target="_blank"><img
+                                src="imgProyectos/imgPoster.png"></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!------------------ProyDisWeb------------------>
+            <article style="margin-top: 80px;">
+                <h1 id="ProyDisWeb">Proyectos de Diseño Web y Aplicaciones</h1>
+            </article>
+
+            <!-------Galeria------->
+            <div class="galeria">
+                <div class="row">
+                    <div class="column">
+                        <a href="imgProyectos/web7.png" target="_blank"><img src="imgProyectos/web7.png"></a>
+
+                    </div>
+                    <div class="column">
+
+                        <a href="imgProyectos/web1.png" target="_blank"><img src="imgProyectos/web1.png"></a>
+                    </div>
+                    <div class="column">
+                        <a href="imgProyectos/web8.png" target="_blank"><img src="imgProyectos/web8.png"></a>
+                    </div>
+                    <div class="column">
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDigitalerias%2Fvideos%2F1285237442072551%2F&show_text=false&width=560&t=0"
+                            width="560" height="210" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen lazyload frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+                    </div>
+                </div>
+            </div>
+
+            <!------------------ProyDisJuegos------------------>
+            <article style="margin-top: 80px;">
+                <h1 id="ProyDisJuegos">Proyectos de Videojuegos</h1>
+            </article>
+
+            <!-------Galeria------->
+            <div class="galeria">
+                <div class="row">
+                    <div class="column">
+
+                        <a href="imgProyectos/videojuegos2.png" target="_blank"><img
+                            src="imgProyectos/videojuegos2.png"></a>
+
+                    </div>
+                    <div class="column">
+
+                        <a href="imgProyectos/videojuegos1.png" target="_blank"><img
+                                src="imgProyectos/videojuegos1.png"></a>
+                        <iframe width="560" height="150"
+                            src="https://www.youtube.com/embed/datyihEVMs0?si=SG4c1MizVfmCfUdI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="150"
+                            src="https://www.youtube.com/embed/9FzIX2TQ45A?si=T96n4KB50m1n0OKh"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                    </div>
+                    <div class="column">
+
+                        <iframe src="https://www.behance.net/embed/project/144744235?ilo0=1" height="316" width="404"
+                            allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                            refererPolicy="strict-origin-when-cross-origin"></iframe>
+                        <a href="imgProyectos/videojuegos3.png" target="_blank"><img
+                                src="imgProyectos/videojuegos3.png"></a>
+
+                    </div>
+                    <div class="column">
+                        <iframe width="560" height="180"
+                            src="https://www.youtube.com/embed/dkwu5PjQ8eQ?si=wTQxag_zKNWAzkwm"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <a href="imgProyectos/juegoAguas.png" target="_blank"><img
+                                src="imgProyectos/juegoAguas.png"></a>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!------------------ProyDisPubli------------------>
+            <article style="margin-top: 80px;">
+                <h1 id="ProyDisPubli">Proyectos de Publicidad</h1>
+            </article>
+
+            <!-------Galeria------->
+            <div class="galeria">
+                <div class="row">
+                    <div class="column">
+
+                        <a href="imgProyectos/imgPublicitariaBoceto.png" target="_blank"><img
+                                src="imgProyectos/imgPublicitariaBoceto.png"></a>
+                        <a href="imgProyectos/imgPublicitariaFinal.png" target="_blank"><img
+                                src="imgProyectos/imgPublicitariaFinal.png"></a>
+                                <a href="imgProyectos/imagen1.png" target="_blank"><img
+                                    src="imgProyectos/imagen1.png"></a>
+
+                    </div>
+                    <div class="column">
+                        <a href="imgProyectos/InvitacionTalleristas2.png" target="_blank"><img
+                            src="imgProyectos/InvitacionTalleristas2.png"></a>
+                        
+                        <a href="imgProyectos/Infograf3.png" target="_blank"><img
                                     src="imgProyectos/Infograf3.png"></a>
-                            <a href="imgProyectos/web1.png" target="_blank"><img src="imgProyectos/web1.png"></a>
-                            <a href="imgProyectos/aleg.jpg" target="_blank"><img src="imgProyectos/aleg.jpg"></a>
+
+
+                    </div>
+                    <div class="column">
+                        <a href="imgProyectos/montaje.png" target="_blank"><img
+                            src="imgProyectos/InvitacionTalleristas.png">
+                        <a href="imgProyectos/Infograf1.png" target="_blank"><img src="imgProyectos/Infograf1.png"></a>
+                    </div>
+
+                    <div class="column">
+                        <a href="imgProyectos/montaje.png" target="_blank"><img src="imgProyectos/montaje.png"></a>
+                        <a href="imgProyectos/Info4.png" target="_blank"><img src="imgProyectos/Info4.png"></a>
+
+                        
+
+                            
+
+                            
+
                     </div>
                 </div>
             </div>
@@ -150,19 +334,23 @@
             <address>
                 <p><b>¡Contáctame!</b></p>
                 <div>
-                    <a href="https://www.behance.net/alejandrazavalalimon" target="_blank"><i class="fa-brands fa-behance fa-xl"></i></a>
-                    <a href="https://twitter.com/alepao_mir" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
-                    <a href="https://www.instagram.com/limon.arts13/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                    <a href="mailto:al204656@alumnos.uacj.mx"><i class="fa-solid fa-envelope fa-xl"></i></a>
+                    <a href="https://www.behance.net/alejandrazavalalimon" target="_blank"><i
+                            class="fa-brands fa-behance fa-xl"></i></a>
+                    <a href="https://twitter.com/alepao_mir" target="_blank"><i
+                            class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    <a href="https://www.instagram.com/limon.arts13/" target="_blank"><i
+                            class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="mailto:24.zavala.alejandra@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a>
                 </div>
-                
+
             </address>
 
             <ul>
-                <li>│<a href="index.html">MIS PROYECTOS</a>││<a href="gallery.html">GALERÍA</a>│</li>
+                <li>│<a href="index.html">SOBRE MÍ</a>││<a href="gallery.html">GALERÍA</a>││<a href="https://drive.google.com/file/d/1mjUtT26yK5_9g34ELX1SjxL9spN1oNxX/view?usp=sharing" target="_blank">CV</a>│</li>
             </ul>
         </div>
     </footer>
+
     <script src="/js/gallery.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -172,6 +360,44 @@
             }
         });
     </script>
+
+    <div id="popup-container" class="hidden">
+        <div id="popup">
+            <span id="popup-close"><i class="fas fa-times"></i></span>
+            <img id="popup-image" src="" alt="Imagen ampliada">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const popupContainer = document.getElementById("popup-container");
+            const popupImage = document.getElementById("popup-image");
+            const popupClose = document.getElementById("popup-close");
+            const galleryImages = document.querySelectorAll(".galeria img");
+
+            galleryImages.forEach((img) => {
+                img.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    popupImage.src = img.src;
+                    popupContainer.classList.remove("hidden");
+                });
+            });
+
+            popupClose.addEventListener("click", () => {
+                popupContainer.classList.add("hidden");
+                popupImage.src = ""; // Limpia la imagen para evitar problemas de carga
+            });
+
+            popupContainer.addEventListener("click", (e) => {
+                if (e.target === popupContainer) {
+                    popupContainer.classList.add("hidden");
+                    popupImage.src = "";
+                }
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>
