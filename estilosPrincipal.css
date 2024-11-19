@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Caviar Dreams';
-    src: url('../bitacora/imgProyectos/CaviarDreams_Bold.ttf') format('truetype');
+    src: url('../imgProyectos/CaviarDreams_Bold.ttf') format('truetype');
 }
 
 * {
@@ -61,7 +61,7 @@ header {
     height: 100vh;
     /*768px;*/
     background-color: rgb(243, 202, 218);
-    background-image: url('../bitacora/imgProyectos/FotoHeader.png');
+    background-image: url('../imgProyectos/FotoHeader.png');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
