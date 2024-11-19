@@ -1009,7 +1009,7 @@ a.icon {
        .menu2 {
         width: 90%;
         position: absolute;
-        top: 70px;
+        top: 100px;
         float: left;
         display: flex;
         justify-content: space-around;
