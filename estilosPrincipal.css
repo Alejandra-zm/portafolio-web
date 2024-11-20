@@ -109,7 +109,10 @@ article img {
     max-width: 100%;
 }
 
-
+#menuHam{
+    position: relative;
+    z-index: 2;
+}
 #logos {
     display: flex;
     justify-content: space-between;
@@ -541,10 +544,11 @@ a.icon {
 .nav {
     border-top: 5px solid var(--rosa);
     background-color: var(--fondomain);
-    box-shadow: 5px 5px 5px var(--negro);
     width: 100%;
     display: none;
     height: 35px;
+    position: absolute;
+    top: -50px;
 }
 
 .propiedades {
@@ -763,13 +767,14 @@ a.icon {
     }
 
     .menu2 {
-        width: 90%;
+        width: 100%;
         position: absolute;
-        top: 50px;
+        top: 60px;
         float: left;
-        display: flex;
-        justify-content: space-around;
-        padding: 0px 5%;
+        display: block;
+        padding: 0px 20px;
+        background-color: #d08fb08d;
+        
     }
 
     .menu2 a {
@@ -778,6 +783,8 @@ a.icon {
         text-decoration: none;
         font-size: 1rem;
         font-weight: 600;
+        height: 2rem;
+        border-bottom: 2px solid #d08fb08d;
     }
 
     .menu2 a:hover {
@@ -1016,15 +1023,8 @@ a.icon {
         display: block;
       }
        .menu2 {
-        width: 90%;
-        position: absolute;
-        top: 100px;
+        width: 100%;
         float: left;
-        display: flex;
-        justify-content: space-around;
-        padding: 0;
-        background-color: #d08fb08d;
-           
        }
         h1 {
         font-size: 40pt;
