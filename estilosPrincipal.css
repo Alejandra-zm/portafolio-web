@@ -115,6 +115,7 @@ article img {
     justify-content: space-between;
     padding: 0% 4%;
     background-color: #d08fb08d;
+    z-index: 1;
 }
 
 #txt {
@@ -1030,6 +1031,15 @@ a.icon {
       }
       header p {
         font-size: 11pt;
+      }
+     #skzinfo h1{
+        font-size: 30pt;
+      }
+      #skzinfo h3{
+        font-size: 20pt;
+      }
+      #skzinfo{
+        padding: 0% 5%;
       }
 
 }
